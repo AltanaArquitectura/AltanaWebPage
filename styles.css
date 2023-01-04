@@ -8,7 +8,7 @@
 
 body {
   background-color: #ffffff;
-  color: white;
+  color: rgb(0, 0, 0);
   font-family: "Poppins", sans-serif;
 }
 
@@ -156,4 +156,18 @@ header {
   display: flex; /*Convertimos al menú en flexbox*/
   justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
   align-items: center; /*con esto alineamos de manera vertical*/
+}
+
+/* Si la pantalla es más grande de 800px, las celdas ocuparán el 33.3333% del ancho de la tabla */
+@media (min-width: 800px) {
+  td {
+    width: 33.3333%;
+  }
+}
+
+/* Si la pantalla es más pequeña de 800px, las celdas ocuparán el 100% del ancho de la tabla */
+@media (max-width: 800px) {
+  td {
+    width: 100%;
+  }
 }
