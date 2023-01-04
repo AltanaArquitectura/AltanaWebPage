@@ -104,10 +104,12 @@ header {
   left: 0;
   height: calc(100vh - 50px);
   width: 100%;
+  padding: 20%;
+  background-color: rgba(125, 125, 125, 0.8); 
 }
 
-.mobile-menu li {
-  margin-bottom: 10px;
+.mobile-menu a {
+  margin-bottom: 40px;
 }
 
 #tabla1{
@@ -163,6 +165,27 @@ header {
   color: rgb(0, 0, 0);
   font-family: Questrial, sans-serif;
   font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.enlacesNav2{
+  -webkit-font-smoothing: antialiased;
+  font: 13px sans-serif;
+  line-height: 1.22;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  list-style: none;
+  visibility: visible;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  background: 0 0;
+  color: rgb(0, 0, 0);
+  font-family: Questrial, sans-serif;
+  font-size: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
   text-decoration: none;
