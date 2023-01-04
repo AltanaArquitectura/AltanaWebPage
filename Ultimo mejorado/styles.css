@@ -28,44 +28,41 @@ header {
   font-weight: bold;
   font-size: 17px;
   display: flex;
-  display: none;
-  padding: 2%;
+  align-items: center;
+  text-align: center;
 }
 
 #brand a {
   color: #969696;
 }
 
-#nav-abierto{
-  text-align: center;
-}
-
-#nav-abierto ul {
+ul {
   list-style: none;
-  height: 15%;
-  display:flex;
+  height: 100%;
+  display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
 
-#nav-abierto ul li {
+ul a {
+  color: white;
+}
+
+ul li {
   padding: 5px;
   margin-left: 10px;
 }
 
-#nav-abierto ul li:hover {
+ul li:hover {
   transform: scale(1.1);
   transition: 0.3s;
 }
 
-
 #hamburger-icon {
   margin: auto 0;
-  display: flex;
   display: none;
   cursor: pointer;
-  padding: 2%;
 }
 
 #hamburger-icon div {
@@ -111,18 +108,13 @@ header {
 }
 
 @media only screen and (max-width: 700px) {
-  #nav-abierto {
+  header nav {
     display: none;
   }
 
   #hamburger-icon {
     display: block;
   }
-
-  #brand {
-    display: block;
-  }
-
 }
 
 /* Mío */
@@ -150,10 +142,4 @@ header {
 .barraNavega {
   position: centre;
   display: flex;
-}
-
-.contenedor-flexbox {
-  display: flex; /*Convertimos al menú en flexbox*/
-  justify-content: space-between; /*Con esto le indicamos que margine todos los items que se encuentra adentro hacia la derecha e izquierda*/
-  align-items: center; /*con esto alineamos de manera vertical*/
 }
