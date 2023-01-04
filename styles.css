@@ -111,11 +111,13 @@ header {
 }
 
 #tabla1{
-  width: 100%;
+  margin: 5%;
+  width: 90%;
   text-align: center;
 }
 #tabla2{
-  width: 100%;
+  margin: 5%;
+  width: 90%;
   text-align: center;
   display: none;
 }
