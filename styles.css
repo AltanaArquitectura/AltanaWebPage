@@ -110,8 +110,21 @@ header {
   margin-bottom: 10px;
 }
 
+#tabla1{
+  width: 100%;
+  text-align: center;
+}
+#tabla2{
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
 @media only screen and (max-width: 700px) {
   #nav-abierto {
+    display: none;
+  }
+  #nombre-pantalla-grande{
     display: none;
   }
 
@@ -120,6 +133,13 @@ header {
   }
 
   #brand {
+    display: block;
+  }
+
+  #tabla1{
+    display: none;
+  }
+  #tabla2{
     display: block;
   }
 
@@ -158,16 +178,3 @@ header {
   align-items: center; /*con esto alineamos de manera vertical*/
 }
 
-/* Si la pantalla es más grande de 800px, las celdas ocuparán el 33.3333% del ancho de la tabla */
-@media (min-width: 800px) {
-  td {
-    width: 33.3333%;
-  }
-}
-
-/* Si la pantalla es más pequeña de 800px, las celdas ocuparán el 100% del ancho de la tabla */
-@media (max-width: 800px) {
-  td {
-    width: 100%;
-  }
-}
